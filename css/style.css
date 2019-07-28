@@ -129,6 +129,11 @@
     border-radius: .5rem;
     text-align: center;
   }
+
+  .modal .modal-content i {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+  }
 }
 
 /* Mobile design 376px or less */
