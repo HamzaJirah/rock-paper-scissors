@@ -79,7 +79,7 @@
     top: -8rem;
     right: -2rem;
     z-index: 1;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .score-board aside [data-computer]{
@@ -87,7 +87,7 @@
     top: -7.5rem;
     right: -5.7rem;
     z-index: 1;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   /* Choices */
