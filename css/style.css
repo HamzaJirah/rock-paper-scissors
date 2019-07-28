@@ -14,14 +14,14 @@
   box-sizing: border-box;
 }
 
-/* Mobile design */
+/* Mobile design 720px or less*/
 @media (max-width: 720px){
   /* Header */
   .header {
     background-color: rgb(57, 57, 248);
     color: var(--white-color);
     width: 100vw;
-    padding: 5px;
+    padding: .25rem;
     position: fixed;
     top: 0;
   }
@@ -57,6 +57,20 @@
 
   .score-board aside i {
     font-size: 5rem;
+    color: var(--white-color);
+  }
+}
+
+/* Mobile design 376px or less */
+@media (max-width: 376px){
+  .score-board .player, .computer {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+
+  .score-board aside i {
+    font-size: 2.5rem;
     color: var(--white-color);
   }
 }
