@@ -59,6 +59,14 @@
     font-size: 5rem;
     color: var(--white-color);
   }
+
+  .score-board aside span {
+    position: relative;
+    top: -8rem;
+    right: -2rem;
+    z-index: 1;
+    font-size: 2.5rem;
+  }
 }
 
 /* Mobile design 376px or less */
@@ -72,5 +80,13 @@
   .score-board aside i {
     font-size: 2.5rem;
     color: var(--white-color);
+  }
+
+  .score-board aside span {
+    position: relative;
+    top: -5rem;
+    right: -2rem;
+    z-index: 1;
+    font-size: 2.5rem;
   }
 }
