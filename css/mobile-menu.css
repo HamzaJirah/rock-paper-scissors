@@ -11,9 +11,9 @@
   /* Footer */
   .menu {
     position: absolute;
+    bottom: 0;
     width: 100%;
     padding: 8px;
-    bottom: 0;
     background-color: rgb(57, 57, 248);
   }
 
