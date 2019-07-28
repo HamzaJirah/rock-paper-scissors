@@ -1,12 +1,27 @@
-/* override default styles */
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
+/* Custom properties */
 :root{
   --primary-color: rgb(102, 207, 102);
+  --white-color: #fff;
 }
 
+/* override default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Mobile design */
+@media (max-width: 720px){
+  /* Header */
+  .header {
+    background-color: rgb(57, 57, 248);
+    color: var(--white-color);
+  }
+  .header h1 {
+    text-align: center;
+  }
+}
