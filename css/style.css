@@ -107,6 +107,9 @@
     cursor: pointer;
     color: var(--secondary-color);
   }
+
+  /* Modal */
+  
 }
 
 /* Mobile design 376px or less */
