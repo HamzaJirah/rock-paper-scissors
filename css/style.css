@@ -5,6 +5,7 @@
 :root{
   --primary-color: rgb(102, 207, 102);
   --white-color: #fff;
+  --secondary-color:  rgb(57, 57, 248);
 }
 
 /* override default styles */
@@ -18,7 +19,7 @@
 @media (max-width: 720px){
   /* Header */
   .header {
-    background-color: rgb(57, 57, 248);
+    background-color: var(--secondary-color);
     color: var(--white-color);
     width: 100vw;
     padding: .25rem;
@@ -43,6 +44,7 @@
   }
 
   .score-board .player, .computer {
+    display: grid;
     background-color: var(--primary-color);
     width: 11rem;
     height: 11rem;
@@ -58,14 +60,51 @@
   .score-board aside i {
     font-size: 5rem;
     color: var(--white-color);
+    justify-self: center;
+    align-self: center;
   }
 
   .score-board aside span {
+    background-color: var(--secondary-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: var(--white-color);
+    text-align: center;
+  }
+
+  .score-board aside [data-player] {
     position: relative;
     top: -8rem;
     right: -2rem;
     z-index: 1;
     font-size: 2.5rem;
+  }
+
+  .score-board aside [data-computer]{
+    position: relative;
+    top: -7.5rem;
+    right: -5.7rem;
+    z-index: 1;
+    font-size: 2.5rem;
+  }
+
+  /* Choices */
+  .content .choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    margin-top: 2rem;
+  }
+
+  .content .choices .choice {
+    justify-self: center;
+    align-self: center;
+    font-size: 4.5rem;
+  }
+
+  .content .choices .choice:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
   }
 }
 
@@ -82,11 +121,28 @@
     color: var(--white-color);
   }
 
-  .score-board aside span {
+  .score-board aside [data-player] {
     position: relative;
     top: -5rem;
     right: -2rem;
     z-index: 1;
     font-size: 2.5rem;
+  }
+
+  .score-board aside [data-computer] {
+    position: relative;
+    top: -5.2rem;
+    right: -2rem;
+    z-index: 1;
+    font-size: 2.5rem;
+  }
+
+  .score-board aside span {
+    background-color: var(--secondary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: var(--white-color);
+    text-align: center;
   }
 }
