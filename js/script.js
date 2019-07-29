@@ -4,8 +4,7 @@ let playerScore = document.querySelector('[data-player]'),
 
 const choices = document.querySelectorAll('.game-choice'),
       playerChoice = document.querySelector('.fa-male'),
-      computerChoice = document.querySelector('.fa-desktop');
-
+      computerChoice = document.querySelector('.fa-desktop');                  
 
 // Play game 
 function playGame () {
@@ -17,6 +16,7 @@ choices.forEach(choice => {
   choice.addEventListener('click', makeChoice)
 })
 
+// make choice
 function makeChoice (choose) {
   
 }
