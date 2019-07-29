@@ -6,5 +6,9 @@ const choices = document.querySelectorAll('.game-choice');
 
 // Play game 
 const playGame = () => {
-
+  
 }
+
+choices.forEach(choice => {
+  
+})
