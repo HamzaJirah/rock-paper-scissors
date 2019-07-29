@@ -10,5 +10,5 @@ const playGame = () => {
 }
 
 choices.forEach(choice => {
-  
+  choice.addEventListener('click', makeChoice)
 })
