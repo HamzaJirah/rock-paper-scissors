@@ -1,6 +1,8 @@
 // get reference to DOM elements
 let playerScore = document.querySelector('[data-player]'),
-    computerScore = document.querySelector('[data-computer]');
+    computerScore = document.querySelector('[data-computer]'),
+    player = playerChoice();
+    computer = computerChoice();
 
 const choices = document.querySelectorAll('.game-choice'),
       modal = document.querySelector('.modal');
