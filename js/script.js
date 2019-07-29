@@ -9,6 +9,7 @@ const playGame = () => {
   
 }
 
+// loop through the choices
 choices.forEach(choice => {
   choice.addEventListener('click', makeChoice)
 })
