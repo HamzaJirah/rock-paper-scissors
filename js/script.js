@@ -2,5 +2,6 @@
 let playerScore = document.querySelector('[data-player]'),
     computerScore = document.querySelector('[data-computer]');
 
-const choices = document.querySelectorAll('.choice');
-console.log(choices);
+const choices = document.querySelectorAll('.game-choice');
+
+
