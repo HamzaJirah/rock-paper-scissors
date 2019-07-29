@@ -36,15 +36,16 @@ choices_1.forEach(choice => {
   choice.addEventListener('click', compRandomChoice);
 })
 
-function compRandomChoice(){
-  let randomChoice =  Math.floor(Math.random() * 3);
-  if(randomChoice === 0){
-    console.log('Zero');
-  } else if (randomChoice === 1) {
-    console.log('One')
-  } else {
-    console.log('Two')
-  }
+function compRandomChoice(e){
+  let randomNum =  Number(Math.floor(Math.random() * 3));
+  let randomChoice = e.target;
+  if(randomChoice && randomNum === 0){
+    console.log(`You lost ${randomNum}`)
+  } else if (randomChoice && randomNum  === 1) {
+    console.log(`You win ${randomNum}`)
+  } else if(randomChoice && randomNum === 2) {
+    console.log(`You drew ${randomNum}`)
+  } 
 }
 
 
