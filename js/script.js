@@ -5,7 +5,9 @@ let playerScore = document.querySelector('[data-player]'),
 const choices = document.querySelectorAll('.game-choice');
 
 // Create an empty object 
-const 
+const gameChoice = {
+  
+}
 // Play game 
 function playGame () {
   makeChoice();
