@@ -1,15 +1,16 @@
 // get reference to DOM elements
 let playerScore = document.querySelector('[data-player]'),
-    computerScore = document.querySelector('[data-computer]'),
-    computer_choice = randomSelection();
+    computerScore = document.querySelector('[data-computer]');
   
 const choices = document.querySelectorAll('.game-choice'),
+      choices_1 = document.querySelectorAll('.choice .fas'),
       modal = document.querySelector('.modal'),
       modalContent = document.querySelector('.modal-content');
 
 // Play game 
 function playGame () {
   makeChoice();
+  compRandomChoice();
 }
 
 // convert nodelist to array
@@ -27,13 +28,31 @@ function makeChoice (player_choice) {
       <h1>Developing game...</h1>
       <i class="${player_choice.target.classList}"></i>
     `;
-  } 
+  }
 }
 
-// random number
-function randomSelection(){
-  return Math.floor(Math.random() * 3);
+// computer random choice
+choices_1.forEach(choice => {
+  choice.addEventListener('click', compRandomChoice);
+})
+
+function compRandomChoice(){
+  let randomChoice =  Math.floor(Math.random() * 3);
+  if(randomChoice === 0){
+    console.log('Zero');
+  } else if (randomChoice === 1) {
+    console.log('One')
+  } else {
+    console.log('Two')
+  }
 }
+
+
+
+// random number
+// function randomSelection(){
+//   return Math.floor(Math.random() * 3);
+// }
 
 
 // close modal 
