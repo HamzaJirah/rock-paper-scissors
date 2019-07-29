@@ -2,11 +2,12 @@
 let playerScore = document.querySelector('[data-player]'),
     computerScore = document.querySelector('[data-computer]');
 
-const choices = document.querySelectorAll('.game-choice');
+const choices = document.querySelectorAll('.game-choice'),
+      modal = document.querySelector('.modal');
 
 // Create an empty object 
 const gameChoice = {
-  
+
 }
 // Play game 
 function playGame () {
