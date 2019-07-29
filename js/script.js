@@ -3,7 +3,8 @@ let playerScore = document.querySelector('[data-player]'),
     computerScore = document.querySelector('[data-computer]');
 
 const choices = document.querySelectorAll('.game-choice'),
-      
+      playerChoice = document.querySelector('.fa-male'),
+      computerChoice = document.querySelector('.fa-desktop');
 
 
 // Play game 
