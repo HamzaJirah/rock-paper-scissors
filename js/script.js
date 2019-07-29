@@ -5,6 +5,6 @@ let playerScore = document.querySelector('[data-player]'),
 const choices = document.querySelectorAll('.game-choice');
 
 // Play game 
-const playGame = () {
-  
+const playGame = () => {
+
 }
