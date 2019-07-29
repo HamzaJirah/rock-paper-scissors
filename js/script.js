@@ -6,7 +6,7 @@ const choices = document.querySelectorAll('.game-choice');
 
 // Play game 
 const playGame = () => {
-  
+  makeChoice();
 }
 
 // loop through the choices
