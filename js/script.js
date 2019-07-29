@@ -4,7 +4,8 @@ let playerScore = document.querySelector('[data-player]'),
     computer_choice = randomSelection();
   
 const choices = document.querySelectorAll('.game-choice'),
-      modal = document.querySelector('.modal');
+      modal = document.querySelector('.modal'),
+      modalContent = document.querySelector('.modal-content');
 
 // Play game 
 function playGame () {
@@ -22,6 +23,10 @@ gameChoice.forEach(choice => {
 function makeChoice (player_choice) {
   if(player_choice.target.classList.contains('fas')){
     modal.style.display = 'block';
+    modalContent.innerHTML = `
+      <h1>Developing game...</h1>
+      <i class="${player_choice.target.classList}"></i>
+    `;
   } 
 }
 
