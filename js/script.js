@@ -21,13 +21,4 @@ function makeChoice (choose) {
   
 }
 
-// play by player
-function playerGame(){
-
-}
-
-// play by computer
-function computerGame(){
-  
-}
 
