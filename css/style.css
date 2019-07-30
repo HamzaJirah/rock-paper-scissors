@@ -125,8 +125,8 @@
   .modal .modal-content {
     background-color: var(--white-color);
     max-width: 15rem;
-    margin: 15rem 5rem;
-    padding: 2.5rem;
+    margin: 10rem 5rem;
+    padding: 1.5rem;
     border-radius: .5rem;
     text-align: center;
   }
@@ -141,7 +141,17 @@
   }
 
   .button-style {
+    border: none;
     padding: .5rem;
+    margin-top: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    border-radius: .3rem;
+  }
+
+  .button-style:hover {
+    cursor: pointer;
   }
 }
 
