@@ -97,7 +97,6 @@ function gameSummary(e){
     <p>Win 😄</p>
     <p>Loose 😠</p>
     <p>Draw 😒</p>
-    <i class="${e.target.classList}"></i>
   `;
 }
 
