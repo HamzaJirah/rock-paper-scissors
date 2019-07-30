@@ -11,7 +11,7 @@ const choices = document.querySelectorAll('.game-choice'),
 
 // Play game 
 function playGame () {
-  // makeChoice();
+  // play game
   gameRandomChoice();
 }
 
@@ -60,7 +60,21 @@ function gameRandomChoice(e){
       parseInt(playerScore.textContent --);
       parseInt(computerScore.textContent --);
       console.log(`You drew ${randomNum}`)
-  } 
+  } else if (computerScore.textContent > 5 || playerScore.textContent === -5){
+    // reset game 
+    resetGame();
+  }
+}
+
+// reset game 
+function resetGame(){
+  // create reset button
+  let button = document.createElement('button');
+  // create text node 
+  let textNode = document.createTextNode('Reset Game')
+  button.appendChild(textNode);
+  // append button to modal content 
+  modalContent.appendChild(button);
 }
 
 // close modal 
