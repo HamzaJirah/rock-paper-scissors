@@ -60,10 +60,14 @@ function gameRandomChoice(e){
       parseInt(playerScore.textContent --);
       parseInt(computerScore.textContent --);
       console.log(`You drew ${randomNum}`)
-  } else if (computerScore.textContent > 5 || playerScore.textContent === -5){
-    // reset game 
-    resetGame();
-  }
+  } 
+    // create reset button
+    let button = document.createElement('button');
+    // create text node 
+    let textNode = document.createTextNode('Reset Game')
+    button.appendChild(textNode);
+    // append button to modal content 
+    modalContent.appendChild(button);
 }
 
 // reset game 
@@ -84,20 +88,47 @@ modal.addEventListener('click', e => {
   }
 })
 
-// play button reference
-const playButton = document.querySelector('.fa-play');
-// add event listener
-playButton.addEventListener('click', gameSummary);
+// menu icons reference
+const menu = document.querySelectorAll('ul li i');
+// loop through menu icons
+menu.forEach(button => {
+  button.addEventListener('click', menuIcons);
+})
 
-// game summary
-function gameSummary(e){
-  modal.style.display = 'block';
-  modalContent.innerHTML = `
-    <h1>Possibilities</h1>
-    <p>Win 😄</p>
-    <p>Loose 😠</p>
-    <p>Draw 😒</p>
-  `;
+
+// menu icons
+function menuIcons(e){
+  if(e.target.classList.contains('fa-play')){
+    modal.style.display = 'block';
+    modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+    modalContent.style.color = '#fff';
+    modalContent.innerHTML = `
+      <h1>Possibilities</h1>
+      <p>Win 😄</p>
+      <p>Loose 😠</p>
+      <p>Draw 😒</p>
+    `;
+  } else if(e.target.classList.contains('fa-home')){
+      modal.style.display = 'block';
+      modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+      modalContent.style.color = '#fff';
+      modalContent.innerHTML = `
+        <h1>Possibilities</h1>
+        <p>Win 😄</p>
+        <p>Loose 😠</p>
+        <p>Draw 😒</p>
+      `;
+  } else if(e.target.classList.contains('fa-cog')){
+      modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+      modalContent.style.color = '#fff';
+      modal.style.display = 'block';
+      modalContent.innerHTML = `
+        <h1>Possibilities</h1>
+        <p>Win 😄</p>
+        <p>Loose 😠</p>
+        <p>Draw 😒</p>
+      `;
+  }
 }
 
 
