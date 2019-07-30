@@ -139,6 +139,10 @@
     margin-top: 1rem;
     font-size: 3.5rem;
   }
+
+  .button-style {
+    padding: .5rem;
+  }
 }
 
 /* Mobile design 376px or less */
