@@ -27,8 +27,8 @@ function gameRandomChoice(e){
   if(randomChoice && randomNum === 0){
     modal.style.display = 'block';
     modalContent.innerHTML = `
-      <h1>You lost</h1>
-      <p>Computer Chose ⬇️</p>
+      <h1>Lost</h1>
+      <p>Your Choice ⬇️</p>
       <i class="${randomChoice.classList}"></i>
     `;
     playerScore.style.display = 'block';
@@ -39,8 +39,8 @@ function gameRandomChoice(e){
   } else if (randomChoice && randomNum  === 1) {
       modal.style.display = 'block';
       modalContent.innerHTML = `
-        <h1>You Won</h1>
-        <p>Computer Chose ⬇️</p>
+        <h1>Won</h1>
+        <p>Your Choice ⬇️</p>
         <i class="${randomChoice.classList}"></i>
       `;
       playerScore.style.display = 'block';
@@ -51,8 +51,8 @@ function gameRandomChoice(e){
   } else if(randomChoice && randomNum === 2) {
       modal.style.display = 'block';
       modalContent.innerHTML = `
-        <h1>You drew</h1>
-        <p>Computer Chose ⬇️</p>
+        <h1>Drew</h1>
+        <p>Your Choice ⬇️</p>
         <i class="${randomChoice.classList}"></i>
       `;
       playerScore.style.display = 'block';
@@ -78,7 +78,17 @@ function resetButton(){
   // append button to modal content 
   modalContent.appendChild(button);
 
-  // 
+  // reset game 
+  button.addEventListener('click', resetGame)
+}
+
+// reset game 
+function resetGame(e){
+  if(e.target.className = 'button-style'){
+    modal.style.display = 'none';
+    playerScore.style.display = 'none';
+    computerScore.style.display = 'none';
+  }
 }
 
 // close modal 
@@ -113,20 +123,21 @@ function menuIcons(e){
       // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
       // modalContent.style.color = '#fff';
       modalContent.innerHTML = `
-        <h1>Possibilities</h1>
-        <p>Win 😄</p>
-        <p>Loose 😠</p>
-        <p>Draw 😒</p>
+        <h1 style="font-size: 2rem;">Welcome to</h1>
+        <p style="font-size: 1.8rem">Rock ➡️<i class="fas fa-hand-rock" style="font-size: 1.8rem"></i></p>
+        <p style="font-size: 1.8rem">Paper ➡️<i class="fas fa-hand-paper" style="font-size: 1.8rem"></i></p>
+        <p style="font-size: 1.8rem">Scissors ➡️<i class="fas fa-hand-scissors" style="font-size: 1.8rem"></i></p>
       `;
   } else if(e.target.classList.contains('fa-cog')){
       // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
       // modalContent.style.color = '#fff';
       modal.style.display = 'block';
       modalContent.innerHTML = `
-        <h1>Possibilities</h1>
-        <p>Win 😄</p>
-        <p>Loose 😠</p>
-        <p>Draw 😒</p>
+        <h1>Rules</h1>
+        <p>Same choice ➡️ draw</p>
+        <p>Rock & Scissors ➡️ Rock wins</p>
+        <p>Scissors & Paper ➡️ Scissors wins</p>
+        <p>Paper & Rock ➡️ Paper wins</p>
       `;
   }
 }
