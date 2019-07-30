@@ -33,8 +33,8 @@ function gameRandomChoice(e){
     `;
     playerScore.style.display = 'block';
     computerScore.style.display = 'block';
-    playerScore--;
-    computerScore++;
+    parseInt(playerScore.textContent --);
+    parseInt(computerScore.textContent ++);
     console.log(`You lost ${randomNum}`)
   } else if (randomChoice && randomNum  === 1) {
       modal.style.display = 'block';
@@ -45,8 +45,8 @@ function gameRandomChoice(e){
       `;
       playerScore.style.display = 'block';
       computerScore.style.display = 'block';
-      playerScore++;
-      computerScore--;
+      parseInt(playerScore.textContent ++);
+      parseInt(computerScore.textContent --);
       console.log(`You win ${randomNum}`)
   } else if(randomChoice && randomNum === 2) {
       modal.style.display = 'block';
@@ -57,8 +57,8 @@ function gameRandomChoice(e){
       `;
       playerScore.style.display = 'block';
       computerScore.style.display = 'block';
-      playerScore--;
-      computerScore--;
+      parseInt(playerScore.textContent --);
+      parseInt(computerScore.textContent --);
       console.log(`You drew ${randomNum}`)
   } 
 }
