@@ -63,11 +63,11 @@ function gameRandomChoice(e){
   } 
     
   // add reset button 
-  resetGame();
+  resetButton();
 }
 
 // reset game 
-function resetGame(){
+function resetButton(){
   // create reset button
   let button = document.createElement('button');
   // add css class
@@ -77,6 +77,8 @@ function resetGame(){
   button.appendChild(textNode);
   // append button to modal content 
   modalContent.appendChild(button);
+
+  // 
 }
 
 // close modal 
@@ -98,8 +100,8 @@ menu.forEach(button => {
 function menuIcons(e){
   if(e.target.classList.contains('fa-play')){
     modal.style.display = 'block';
-    modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
-    modalContent.style.color = '#fff';
+    // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+    // modalContent.style.color = '#fff';
     modalContent.innerHTML = `
       <h1>Possibilities</h1>
       <p>Win 😄</p>
@@ -108,8 +110,8 @@ function menuIcons(e){
     `;
   } else if(e.target.classList.contains('fa-home')){
       modal.style.display = 'block';
-      modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
-      modalContent.style.color = '#fff';
+      // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+      // modalContent.style.color = '#fff';
       modalContent.innerHTML = `
         <h1>Possibilities</h1>
         <p>Win 😄</p>
@@ -117,8 +119,8 @@ function menuIcons(e){
         <p>Draw 😒</p>
       `;
   } else if(e.target.classList.contains('fa-cog')){
-      modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
-      modalContent.style.color = '#fff';
+      // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
+      // modalContent.style.color = '#fff';
       modal.style.display = 'block';
       modalContent.innerHTML = `
         <h1>Possibilities</h1>
