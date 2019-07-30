@@ -70,9 +70,9 @@ function gameRandomChoice(e){
 function resetGame(){
   // create reset button
   let button = document.createElement('button');
-  // create text node 
   // add css class
   button.className = 'button-style';
+  // create text node 
   let textNode = document.createTextNode('Reset Game')
   button.appendChild(textNode);
   // append button to modal content 
