@@ -1,6 +1,10 @@
 // get reference to DOM elements
 let playerScore = document.querySelector('[data-player]'),
     computerScore = document.querySelector('[data-computer]');
+
+// set the values of player and computer score to 0
+playerScore = 0;
+computerScore = 0;
   
 const choices = document.querySelectorAll('.game-choice'),
       modal = document.querySelector('.modal'),
