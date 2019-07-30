@@ -65,7 +65,7 @@
   }
 
   .score-board aside span {
-    /* display: none; */
+    display: none;
     background-color: var(--secondary-color);
     width: 3.5rem;
     height: 3.5rem;
