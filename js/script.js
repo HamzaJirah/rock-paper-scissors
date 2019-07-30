@@ -61,13 +61,9 @@ function gameRandomChoice(e){
       parseInt(computerScore.textContent --);
       console.log(`You drew ${randomNum}`)
   } 
-    // create reset button
-    let button = document.createElement('button');
-    // create text node 
-    let textNode = document.createTextNode('Reset Game')
-    button.appendChild(textNode);
-    // append button to modal content 
-    modalContent.appendChild(button);
+    
+  // add reset button 
+  resetGame();
 }
 
 // reset game 
