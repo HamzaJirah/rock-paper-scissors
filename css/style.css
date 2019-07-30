@@ -131,6 +131,10 @@
     text-align: center;
   }
 
+  .modal .modal-content h1, p {
+    font-family: 'Acme', sans-serif;
+  }
+
   .modal .modal-content i {
     margin-top: 1rem;
     font-size: 3.5rem;
