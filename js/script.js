@@ -84,3 +84,21 @@ modal.addEventListener('click', e => {
   }
 })
 
+// play button reference
+const playButton = document.querySelector('.fa-play');
+// add event listener
+playButton.addEventListener('click', gameSummary);
+
+// game summary
+function gameSummary(e){
+  modal.style.display = 'block';
+  modalContent.innerHTML = `
+    <h1>Possibilities</h1>
+    <p>Win 😄</p>
+    <p>Loose 😠</p>
+    <p>Draw 😒</p>
+    <i class="${e.target.classList}"></i>
+  `;
+}
+
+
