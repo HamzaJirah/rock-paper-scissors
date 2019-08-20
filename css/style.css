@@ -189,6 +189,10 @@
     .content {
       margin: 10rem auto;
     }
+
+    header footer ul li a i {
+      font-size: 1rem;
+    }
   }
 
   /* reduce header font size on mobile devices */
