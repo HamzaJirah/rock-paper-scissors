@@ -19,6 +19,9 @@
 @media (min-width: 721px){
   /* Header */
   .header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
     background-color: var(--secondary-color);
     color: var(--white-color);
     width: 100vw;
@@ -27,9 +30,31 @@
     top: 0;
   }
   .header h1 {
-    /* text-align: center; */
+    grid-column: 1 / 4;
     font-size: 2.3rem;
     font-family: 'Acme', sans-serif;
+  }
+
+  header ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  header ul li {
+    display: grid;
+    list-style: none;
+  }
+
+  header ul li a {
+    display: grid;
+    text-decoration: none; 
+  }
+
+  header ul li a i {
+    justify-self: center;
+    align-self: center;
+    color: var(--white-color);
   }
 
   /* Main */
