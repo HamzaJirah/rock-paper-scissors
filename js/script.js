@@ -88,6 +88,7 @@ function resetGame(e){
     modal.style.display = 'none';
     playerScore.style.display = 'none';
     computerScore.style.display = 'none';
+    window.location.reload();
   }
 }
 
