@@ -41,17 +41,17 @@
     grid-template-rows: auto;
   }
 
-  header ul li {
+  header footer ul li {
     display: grid;
     list-style: none;
   }
 
-  header ul li a {
+  header footer ul li a {
     display: grid;
     text-decoration: none; 
   }
 
-  header ul li a i {
+  header footer ul li a i {
     justify-self: center;
     align-self: center;
     color: var(--white-color);
