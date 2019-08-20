@@ -124,10 +124,10 @@ function menuIcons(e){
       // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
       // modalContent.style.color = '#fff';
       modalContent.innerHTML = `
-        <h1 style="font-size: 2rem;">Welcome to</h1>
-        <p style="font-size: 1.8rem">Rock ➡️<i class="fas fa-hand-rock" style="font-size: 1.8rem"></i></p>
-        <p style="font-size: 1.8rem">Paper ➡️<i class="fas fa-hand-paper" style="font-size: 1.8rem"></i></p>
-        <p style="font-size: 1.8rem">Scissors ➡️<i class="fas fa-hand-scissors" style="font-size: 1.8rem"></i></p>
+        <h1>Welcome to ⬇️</h1>
+        <p>Rock ➡️<i class="fas fa-hand-rock" style="font-size: 1.8rem"></i></p>
+        <p>Paper ➡️<i class="fas fa-hand-paper" style="font-size: 1.8rem"></i></p>
+        <p>Scissors ➡️<i class="fas fa-hand-scissors" style="font-size: 1.8rem"></i></p>
       `;
   } else if(e.target.classList.contains('fa-cog')){
       // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
