@@ -38,9 +38,13 @@
   /* score-board */
   .content .score-board {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    grid-template-columns: repeat(5,1fr);
     gap: .5rem;
-    margin: 6.5rem .8rem 0 .8rem;
+    margin: 6.5rem auto;
+  }
+
+  .score-board .player {
+    grid-column: 2 / 4;
   }
 
   .score-board .player, .computer {
