@@ -129,7 +129,7 @@ function menuIcons(e){
         <p>Paper ➡️<i class="fas fa-hand-paper" style="font-size: 1.8rem"></i></p>
         <p>Scissors ➡️<i class="fas fa-hand-scissors" style="font-size: 1.8rem"></i></p>
       `;
-  } else if(e.target.classList.contains('fa-cog')){
+  } else if(e.target.classList.contains('fa-info')){
       // modalContent.style.backgroundColor = 'rgb(57, 57, 248)';
       // modalContent.style.color = '#fff';
       modal.style.display = 'block';
