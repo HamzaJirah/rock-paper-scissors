@@ -15,6 +15,146 @@
   box-sizing: border-box;
 }
 
+/* desktop and tablets */
+@media (min-width: 721px){
+  /* Header */
+  .header {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    width: 100vw;
+    padding: .25rem;
+    position: fixed;
+    top: 0;
+  }
+  .header h1 {
+    /* text-align: center; */
+    font-size: 2.3rem;
+    font-family: 'Acme', sans-serif;
+  }
+
+  /* Main */
+  
+
+  /* score-board */
+  .content .score-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    gap: .5rem;
+    margin: 6.5rem .8rem 0 .8rem;
+  }
+
+  .score-board .player, .computer {
+    display: grid;
+    background-color: var(--primary-color);
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+  }
+
+  .score-board aside {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .score-board aside i {
+    font-size: 5rem;
+    color: var(--white-color);
+    justify-self: center;
+    align-self: center;
+  }
+
+  .score-board aside span {
+    display: none;
+    background-color: var(--secondary-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+  }
+
+  .score-board aside [data-player] {
+    position: relative;
+    top: -8rem;
+    right: -2rem;
+    z-index: 1;
+    font-size: 1.8rem;
+  }
+
+  .score-board aside [data-computer]{
+    position: relative;
+    top: -7.5rem;
+    right: -5.7rem;
+    z-index: 1;
+    font-size: 1.8rem;
+  }
+
+  /* Choices */
+  .content .choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    margin-top: 2rem;
+  }
+
+  .content .choices .choice {
+    justify-self: center;
+    align-self: center;
+    font-size: 4.5rem;
+  }
+
+  .content .choices .choice:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    overflow: auto;  
+  }
+
+  .modal .modal-content {
+    background-color: var(--white-color);
+    max-width: 15rem;
+    margin: 10rem 5rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-align: center;
+  }
+
+  .modal .modal-content h1, p {
+    font-family: 'Acme', sans-serif;
+  }
+
+  .modal .modal-content i {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .button-style {
+    border: none;
+    padding: .5rem;
+    margin-top: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    border-radius: .3rem;
+  }
+
+  .button-style:hover {
+    cursor: pointer;
+  }
+}
+
 /* Mobile design 720px or less*/
 @media (max-width: 720px){
   /* Header */
