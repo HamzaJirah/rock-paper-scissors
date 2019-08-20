@@ -129,7 +129,7 @@
   .modal .modal-content {
     background-color: var(--white-color);
     max-width: 15rem;
-    margin: 10rem 5rem;
+    margin: 10rem auto;
     padding: 1.5rem;
     border-radius: .5rem;
     text-align: center;
