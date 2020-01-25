@@ -143,4 +143,11 @@ function menuIcons(e){
   }
 }
 
+// footer 
+const footer = document.querySelector('footer');
+
+const date = new Date();
+
+footer.textContent = date.getFullYear();
+
 
