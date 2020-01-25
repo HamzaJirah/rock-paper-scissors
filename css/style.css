@@ -185,6 +185,18 @@
     cursor: pointer;
   }
 
+  /* Footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5em;
+    text-align: center;
+    background: #424141;
+    color: #fff;
+  }
+
   @media (max-width: 768px){
     .content {
       margin: 10rem auto;
