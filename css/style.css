@@ -41,18 +41,18 @@
     margin-right: 1.5rem;
   }
 
-  header footer ul li {
+  header nav ul li {
     justify-self: end;
     list-style: none;
     margin-top: .5rem;
   }
 
-  header footer ul li a {
+  header nav ul li a {
     display: grid;
     text-decoration: none; 
   }
 
-  header footer ul li a i {
+  header nav ul li a i {
     font-size: 2rem;
     color: var(--white-color);
   }
@@ -190,7 +190,7 @@
       margin: 10rem auto;
     }
 
-    header footer ul li a i {
+    header nav ul li a i {
       font-size: 1rem;
     }
   }
